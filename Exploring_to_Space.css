@@ -1,0 +1,54 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 0, 0);
+    color: rgb(183, 255, 0);
+}
+
+h1 {
+    color: rgb(0, 255, 170);
+}
+
+a {
+    color: rgb(255, 187, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+ul>li {
+    font-weight: bold;
+}
+
+h1+p {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    color: rgb(0, 123, 255);
+}
+
+ul li:nth-child(4) {
+    background-color: aquamarine
+}
+
+p:not(:first-of-type) {
+    text-decoration: underline;
+
+}
+
+ul li::before {
+    content: "🚀 ";
+}
+
+a::after {
+    content: " 🌌";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: rgb(255, 247, 6);
+}
