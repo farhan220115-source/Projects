@@ -6,9 +6,89 @@
     <meta name="viewport" content="width=device-width">
     <title>Registration</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 8px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            margin-bottom: 6px;
+            transition: all 200ms ease;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            transform: translateY(4px);
+            outline: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #name {
+            background-color: #add8e6;
+        }
+
+        #email {
+            background-color: #90ee90;
+        }
+
+        #contact {
+            background-color: #dda0dd;
+        }
+
+        input[type="submit"] {
+            border-radius: 6px;
+            padding: 10px 20px;
+            background-color: #c8b8db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 200ms ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b09cc8;
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-style: italic;
+        }
+
+        label,
+        lable {
+            font-weight: 600;
+            color: #222;
+            font-style: italic;
+        }
+
+        body {
+            font-style: italic;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffe4b5;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
+
 <body>
+
     <h1> Personal Details Form</h1>
     <form>
         <lable>Name</lable><br>
@@ -25,6 +105,9 @@
         <input type="checkbox" id="city2" value="Mumbai">Mumbai<br>
         <input type="checkbox" id="city3" value="Chennai">Chennai<br>
         <input type="checkbox" id="city4" value="Kolkata">Kolkata<br>
+        <input type="checkbox" id="city5" value="Bangalore">Bangalore<br><br>
+        <input type="checkbox" id="terms" value="I agree to the terms and conditions">I agree to the terms and
+        conditions<br><br>
         <input type="submit">
     </form>
 </body>
