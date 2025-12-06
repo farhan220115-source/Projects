@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html>
-<title>Typography</title>
-<style>
-    .text1 {
-        color: red;
-        font-size: 30px;
-    }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typography — Transforms & Text-decoration Examples</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; padding: 18px; }
+        h1 { font-size: 26px; }
+        .text1 { color: red; font-size: 28px; }
+        .p1 { color: blueviolet; font: 18px 'Courier New', monospace; }
 
-    .p1 {
-        color: blueviolet;
-        font: 20px 'Courier New', Courier, monospace;
-    }
-</style>
+        /* compact transform demos: only 3 examples */
+        .transform-grid { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0; }
+        .demo-box{ width:130px;height:100px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e2e8f0;box-shadow:0 6px 14px rgba(0,0,0,0.06);transition:transform .25s ease; }
+        .t-rotate{ transform: rotate(-10deg); }
+        .t-scale{ transform: scale(1.08); }
+        .t-translate{ transform: translateY(10px) translateX(6px); }
+        .demo-box:hover{ transform: translateY(-6px); }
 
+        /* compact text-decoration samples */
+        .td-samples p{ margin:8px 0; font-size:16px }
+        .underline{ text-decoration:underline }
+        .wavy{ text-decoration-line:underline; text-decoration-style:wavy; text-decoration-color:#ff6b6b }
+        .none{ text-decoration:none }
+
+        pre.code{ background:#111827;color:#f8fafc;padding:10px;border-radius:6px;overflow:auto }
+    </style>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typography - Simple</title>
+    <style>
+        /* Very simple styles for beginners */
+        body { font-family: Arial, Helvetica, sans-serif; padding: 18px; }
+        h1 { font-size: 22px; }
+        p { margin: 8px 0; }
+
+        /* Simple text styles */
+        .text1 { color: red; font-size: 20px; }
+        .p1 { color: blueviolet; font-size: 16px; }
+
+        /* Boxes showing basic transform values */
+        .box { display:inline-block; width:120px; height:80px; border:1px solid #ccc; border-radius:6px; margin:6px; display:flex; align-items:center; justify-content:center; }
+        .rotate { transform: rotate(-10deg); }
+        .scale  { transform: scale(1.06); }
+        .translate { transform: translateX(6px) translateY(8px); }
+
+        /* Simple text-decoration examples */
+        .underline { text-decoration: underline; }
+        .wavy { text-decoration-line: underline; text-decoration-style: wavy; color:#ff6b6b; }
+        .none { text-decoration: none; }
+    </style>
+</head>
 <body>
-    <h1>Typography</h1>
-    <p class="text1">Welcome to The world of Coding with Codingal</p>
-    <p class="p1">Learn to code and build awesome apps</p>
-</body>
+    <h1>Typography — Simple examples</h1>
 
+    <p class="text1">Welcome to coding!</p>
+    <p class="p1">Start small and practice.</p>
+
+    <h2>Transforms (very simple)</h2>
+    <!-- three plain examples -->
+    <div class="box rotate">rotate()</div>
+    <div class="box scale">scale()</div>
+    <div class="box translate">translate()</div>
+
+    <h2>Text-decoration (very simple)</h2>
+    <p class="underline">This text is underlined</p>
+    <p class="wavy">This text has a wavy underline</p>
+    <p class="none">This text has no decoration</p>
+
+    <p>Quick code example: <code>.rotate { transform: rotate(-10deg); }</code></p>
+
+</body>
 </html>
