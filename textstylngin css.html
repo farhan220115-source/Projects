@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        TEXT STYLING IN CSS
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .italics-text {
+            font-style: italic;
+            font-family: 'Georgia', serif;
+            font-size: 20px;
+            color: #333;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            font-family: 'Verdana', sans-serif;
+            font-size: 18px;
+            color: #0066cc;
+            text-decoration: underline;
+            letter-spacing: 1px;
+        }
+
+        .uppercase-text {
+            text-transform: uppercase;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: #ff6600;
+            text-align: left;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+
+        .shadow-text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Arial', sans-serif;
+            font-size: 22px;
+            color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="italics-text">Welcome to Text Styling in CSS</h1>
+        <p class="italics-text">
+            This paragraph demonstrates custom text styling using CSS. You can change the font family, size, color, and alignment to suit your design needs.
+        </p>
+        <p class="bold-text">
+            This is an example of bold text with underline and increased letter spacing. CSS allows you to control font weight, decoration, and spacing easily.
+        </p>
+        <p class="uppercase-text">
+            here is some text transformed to uppercase using css. this demonstrates text-transform property along with a monospace font.
+        </p>
+        <p class="shadow-text">
+            This text has a shadow effect applied using CSS text-shadow property, giving it a 3D appearance.
+        </p>
+        <p class="italics-text">
+            Here is an example of <span class="highlight">highlighted text</span> within a paragraph. You can use CSS classes to apply specific styles to certain parts of your text.
+        </p>
+    </div>
+</html>
