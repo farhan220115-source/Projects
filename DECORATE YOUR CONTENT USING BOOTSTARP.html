@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Decorate Your Content Using Bootstrap
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .custom-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #333333;
+            text-align: justify;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Welcome to Bootstrap Decoration</h1>
+            <p class="lead">Learn how to make your content visually appealing with Bootstrap components.</p>
+            <a class="btn btn-light btn-lg" href="#" role="button">Get Started</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="card-title">Text Styling Basics <span class="badge badge-light">CSS</span></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text custom-text">
+                            This paragraph demonstrates custom text styling using CSS. You can change the font family,
+                            size, color, and alignment to suit your design needs.
+                        </p>
+                        <p class="card-text custom-text">
+                            Here is an example of <span class="highlight badge badge-warning">highlighted text</span>
+                            within a paragraph. You can use CSS classes to apply specific styles to parts of your text.
+                        </p>
+                        <p class="card-text custom-text">
+                            Experiment with different CSS properties to see how they affect the appearance of your text.
+                            Happy styling!
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="card-title">Bootstrap Components <span class="badge badge-light">UI</span></h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Bootstrap offers a variety of components like buttons, cards, and alerts to
+                            decorate your content.</p>
+                        <button class="btn btn-secondary mr-2">Secondary Button</button>
+                        <button class="btn btn-danger">Danger Button</button>
+                        <div class="alert alert-success mt-3" role="alert">
+                            <strong>Success!</strong> Your content is now decorated with Bootstrap.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Tips</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Use Bootstrap classes for quick styling</li>
+                            <li class="list-group-item">Combine with custom CSS for uniqueness</li>
+                            <li class="list-group-item">Responsive design out of the box</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>
