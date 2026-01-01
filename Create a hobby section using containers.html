@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Section with Containers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e6f3ff; /* Pastel blue */
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .hobby-card {
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #fffacd; /* Pastel yellow */
+            border: 1px solid #ffe4b5;
+        }
+        .card:nth-child(1) {
+            background-color: #f0e68c; /* Khaki pastel */
+        }
+        .card:nth-child(2) {
+            background-color: #dda0dd; /* Plum pastel */
+        }
+        .card:nth-child(3) {
+            background-color: #98fb98; /* Pale green */
+        }
+        h1 {
+            color: #ffb6c1; /* Light pink */
+        }
+        h5 {
+            color: #87ceeb; /* Sky blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">About Me</h1>
+                <p class="text-center">Hi, I'm Farhan! Welcome to my hobby section.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Personal Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Name:</strong> Farhan</p>
+                        <p><strong>School:</strong> PM Shri Kendriya Vidyalaya Andrews Ganj</p>
+                        <p><strong>Roll Number:</strong> 33</p>
+                        <p><strong>City:</strong> Delhi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>My Hobbies</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Reading books</li>
+                            <li>Playing football</li>
+                            <li>Learning web development</li>
+                            <li>Watching movies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card hobby-card">
+                    <div class="card-header">
+                        <h5>Favorite Hobby: Web Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>I love creating websites and learning new things in HTML, CSS, and JavaScript. It's fun to build things from scratch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
